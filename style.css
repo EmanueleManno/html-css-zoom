@@ -53,13 +53,30 @@ main {
     height: 650px;
     display: flex;
     flex-wrap: wrap;
+    gap: 5px;
 }
 
 .card {
-    flex-basis: calc(100% / 7);
-    height: calc(650px / 5);
+    flex-basis: calc(100% / 7 - 5px);
+    height: calc(650px / 5 - 5px );
     border: 2px dashed white;
+    position: relative;
 }
+
+.card-img {
+    position: absolute;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: grey;
+    display: inline-block;
+    padding: 5px;
+    opacity: 0.8;
+}
+
 
 /*FOOTER*/
 footer {
